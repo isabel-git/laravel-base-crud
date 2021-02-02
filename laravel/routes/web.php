@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PeripheralController@index') -> name('index');
+Route::get('/', 'PeripheralController@index') -> name('peripheral-index');

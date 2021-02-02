@@ -10,6 +10,7 @@ class PeripheralController extends Controller
 {
     public function index() {
 
-        return view('pages.peripheral');
+        $peripherals = Peripheral::all();
+        return view('pages.peripheral', compact('peripherals'));
     }
 }
