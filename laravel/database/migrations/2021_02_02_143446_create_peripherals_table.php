@@ -17,7 +17,7 @@ class CreatePeripheralsTable extends Migration
             $table->id();
 
             $table -> string('name', 60);
-            $table -> string('model', 5);
+            $table -> string('model', 5) -> unique();
             $table -> float('price');
             $table -> integer('watt');
 

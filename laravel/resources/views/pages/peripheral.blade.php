@@ -4,6 +4,9 @@
 
     <h1>Peripherals</h1>
 
+
+    <a href="{{ route('peripheral-create') }}">+AGGIUNGI</a>
+
     <ul>
 
         @foreach ($peripherals as $peripheral)

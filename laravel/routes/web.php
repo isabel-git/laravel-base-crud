@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/periph', 'PeripheralController@index') -> name('peripheral-index');
 Route::get('/periph/{id}', 'PeripheralController@show') -> name('peripheral-show');
+Route::get('/new/periph', 'PeripheralController@create') -> name('peripheral-create');
+Route::post('/new/periph/store', 'PeripheralController@store') -> name('peripheral-store');
